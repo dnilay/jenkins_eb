@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="hello_servlet_dispatcher_forward-1.0-SNAPSHOT.war">
+    <root id="archive" name="myapp.war">
       <element id="artifact" artifact-name="hello_servlet_dispatcher_forward:war exploded" />
     </root>
   </artifact>
