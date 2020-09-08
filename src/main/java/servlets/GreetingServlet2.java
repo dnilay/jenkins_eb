@@ -32,24 +32,15 @@ public class GreetingServlet2 extends HttpServlet {
         String username = request.getParameter("username");
 
         if ((username != null) && (username.length() > 0)) {
-            RequestDispatcher dispatcher =
-                    getServletContext().getRequestDispatcher("/response");
-
-            if (dispatcher != null) {
+            RequestDispatcher dispatcher =request.getRequestDispatcher("response");
+                 
                 dispatcher.include(request, response);
             }
-        }
-
-        // Forward to another page - banner page in this example
-        RequestDispatcher dispatcher =
-                getServletContext().getRequestDispatcher("/banner.html");
-
-        if (dispatcher != null) {
-            dispatcher.forward(request, response);
-        }
-
-        out.println("</body></html>");
-        out.close();
+        
+       
+      
+        
+       
     }
 
     public String getServletInfo() {

@@ -1,5 +1,10 @@
 <html>
 <body>
-<jsp:forward page="greeting2"/>
+<form action="greeting2">
+<label>User Name: </label>
+<input type="text" name="username"><br/>
+<input type="submit">
+</form>
+
 </body>
 </html>
